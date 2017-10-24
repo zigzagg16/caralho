@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13528" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4SF-bV-2gG">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13526"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="DF3-FY-xQg">
+            <objects>
+                <viewController id="4SF-bV-2gG" customClass="ViewController" customModule="caralho" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xVW-FV-llH"/>
+                        <viewControllerLayoutGuide type="bottom" id="biV-Tr-j5m"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VzZ-Ap-mQx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9K-1R-Iib">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="jUP-bf-bPe"/>
+                                </constraints>
+                                <state key="normal" title="💥"/>
+                                <connections>
+                                    <action selector="showtime:" destination="4SF-bV-2gG" eventType="touchUpInside" id="zs9-D7-e4n"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ioX-P4-m2Y" customClass="Caralho" customModule="caralho" customModuleProvider="target">
+                                <rect key="frame" x="30" y="183.5" width="335" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="mK9-oS-hsk"/>
+                                </constraints>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="i9K-1R-Iib" firstAttribute="leading" secondItem="VzZ-Ap-mQx" secondAttribute="leading" id="MTc-fQ-30m"/>
+                            <constraint firstItem="ioX-P4-m2Y" firstAttribute="leading" secondItem="VzZ-Ap-mQx" secondAttribute="leading" constant="30" id="RZz-dr-21R"/>
+                            <constraint firstAttribute="trailing" secondItem="i9K-1R-Iib" secondAttribute="trailing" id="U4O-PD-CVh"/>
+                            <constraint firstItem="biV-Tr-j5m" firstAttribute="top" secondItem="i9K-1R-Iib" secondAttribute="bottom" id="bhg-P1-0KA"/>
+                            <constraint firstItem="ioX-P4-m2Y" firstAttribute="centerY" secondItem="VzZ-Ap-mQx" secondAttribute="centerY" id="wX4-m5-Nzm"/>
+                            <constraint firstAttribute="trailing" secondItem="ioX-P4-m2Y" secondAttribute="trailing" constant="10" id="xBz-Eb-7GX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Us5-dy-6ym"/>
+                    </view>
+                    <connections>
+                        <outlet property="caralho" destination="ioX-P4-m2Y" id="3Jk-rt-YWG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F5Y-8d-tWg" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
