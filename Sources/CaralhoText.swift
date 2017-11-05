@@ -10,17 +10,22 @@ import Foundation
 import UIKit
 
 class CaralhoText {
-    var text:String = ""
-    var time:Double = 0.0
-    var bg:UIImage?
-    var position:Int
-    var inAnimation:UITableViewRowAnimation
-    var outAnimation:UITableViewRowAnimation
-    
-    init(text:String, time:Double, image:UIImage? = nil, position:Int, inAnimation:UITableViewRowAnimation = .middle, outAnimation:UITableViewRowAnimation = .middle) {
+    var text: String = ""
+    var time: Double = 0.0
+    var backgroundImage: UIImage?
+    var position: Int
+    var inAnimation: UITableViewRowAnimation
+    var outAnimation: UITableViewRowAnimation
+
+    init(text: String,
+         time: Double,
+         image: UIImage? = nil,
+         position: Int,
+         inAnimation: UITableViewRowAnimation = .middle,
+         outAnimation: UITableViewRowAnimation = .middle) {
         self.text = text
         self.time = time
-        self.bg = image
+        self.backgroundImage = image
         self.position = position
         self.inAnimation = inAnimation
         self.outAnimation = outAnimation

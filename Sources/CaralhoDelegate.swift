@@ -8,8 +8,8 @@
 
 import Foundation
 
-protocol CaralhoDelegate {
-    func didStart(caralho:Caralho)
-    func didSelectCaralhoText(text:CaralhoText)
-    //TODO: Add didEnd method + logic in Caralho.swift
+protocol CaralhoDelegate: class {
+    func didStart(caralho: Caralho)
+    func didSelectCaralhoText(text: CaralhoText)
+    // TODO: Add didEnd method + logic in Caralho.swift
 }

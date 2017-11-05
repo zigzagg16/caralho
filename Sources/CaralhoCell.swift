@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class CaralhoCell:UITableViewCell {
+class CaralhoCell: UITableViewCell {
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.backgroundColor = .clear
